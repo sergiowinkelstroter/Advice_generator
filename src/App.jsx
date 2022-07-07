@@ -4,6 +4,7 @@ import IconDice from "./components/IconDice";
 import { api } from "./services/api";
 
 function App() {
+  const [loading, setLoading] = useState(false);
   const [frase, setFrase] = useState("");
   const [id, setId] = useState("");
 
@@ -15,7 +16,7 @@ function App() {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
-  }, [frase]);
+  }, [loading]);
 
   useEffect(() => {
     api
@@ -24,10 +25,10 @@ function App() {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
-  }, [frase]);
+  }, [loading]);
 
   function GetNewPhrase() {
-    setFrase();
+    setLoading(!loading);
   }
 
   return (
