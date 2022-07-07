@@ -16,4 +16,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌐 Link
 
-Você pode acessar o site hospedado na internet através [desse link](https://advice-generator.vercel.app/).
+Você pode acessar o site hospedado na internet através [desse link](https://advice-generator-fawn-psi.vercel.app/).
